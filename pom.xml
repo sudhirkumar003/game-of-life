@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
         <cobertura.version>2.6</cobertura.version>
-        <!-- A workaround for a bug in PMD -->
+        <!-- A workaround for a bug in PMD hi-->
         <sourceJdk>1.8</sourceJdk>
         <targetJdk>1.8</targetJdk>
         <github.account>wakaleo</github.account>
@@ -26,6 +26,24 @@
         <developerConnection>scm:git:git@github.com:${github.account}/game-of-life.git</developerConnection>
         <url>scm:git:git@github.com:${github.account}/game-of-life.git</url>
     </scm>
+	
+	<repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
+  
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
     <build>
         <plugins>
             <plugin>

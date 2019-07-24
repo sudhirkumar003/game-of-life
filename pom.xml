@@ -34,15 +34,9 @@
       <id>maven-group</id>
       <url>http://localhost:8081/repository/maven-public/</url>
     </repository>
-<<<<<<< HEAD
-    </repositories> 
-	
-	<distributionManagement>
-=======
   </repositories>
   
   <distributionManagement>
->>>>>>> 7fb7532bed0d0ab00f45c47c95f3026293a0a5cc
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
@@ -51,11 +45,8 @@
       <id>nexus-releases</id>
       <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
-  </distributionManagement>
-<<<<<<< HEAD
-  
-=======
->>>>>>> 7fb7532bed0d0ab00f45c47c95f3026293a0a5cc
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>

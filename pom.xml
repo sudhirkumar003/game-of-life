@@ -12,7 +12,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <easyb.version>1.4</easyb.version>
         <cobertura.version>2.6</cobertura.version>
+		
         <!-- A workaround for a bug in PMD sam -->
+
         <sourceJdk>1.8</sourceJdk>
         <targetJdk>1.8</targetJdk>
         <github.account>wakaleo</github.account>
@@ -32,9 +34,15 @@
       <id>maven-group</id>
       <url>http://localhost:8081/repository/maven-public/</url>
     </repository>
+<<<<<<< HEAD
     </repositories> 
 	
 	<distributionManagement>
+=======
+  </repositories>
+  
+  <distributionManagement>
+>>>>>>> 7fb7532bed0d0ab00f45c47c95f3026293a0a5cc
     <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://localhost:8081/repository/maven-snapshots/</url>
@@ -44,7 +52,10 @@
       <url>http://localhost:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
+<<<<<<< HEAD
   
+=======
+>>>>>>> 7fb7532bed0d0ab00f45c47c95f3026293a0a5cc
     <build>
         <plugins>
             <plugin>
